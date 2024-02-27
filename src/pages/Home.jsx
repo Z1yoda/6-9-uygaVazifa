@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom";
 
 function Home({ userData }) {
 
@@ -15,6 +16,8 @@ function Home({ userData }) {
                         <h4>Username: {userData.username}</h4>
                     </div>
                 )}
+                <NavLink to={"/login"}>Log in</NavLink>
+                <NavLink to={"/register"}>Sign up</NavLink>
             </div>
         </div>
     )
